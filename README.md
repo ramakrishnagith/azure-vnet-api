@@ -43,8 +43,7 @@ Responses: `201` created, `400` invalid input, `401` not authenticated,
 
 ## Authentication and authorization
 
-The Function App is protected by App Service Authentication (Easy Auth) with
-Microsoft Entra ID. Requests without a valid token get `401`. Any authenticated
+The Function App is protected by its built-in authentication feature (Easy Auth, part of the App Service platform that hosts Function Apps) with Microsoft Entra ID as the identity provider.Requests without a valid token get `401`. Any authenticated
 user is authorized; there are no role or group checks, as required.
 
 Separately, the Function's managed identity has the Network Contributor role on
